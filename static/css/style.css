@@ -8,6 +8,7 @@ body {
 
 .container {
     width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -84,3 +85,47 @@ header nav a {
     border: 1px solid #a259ff;
     border-radius: 10px;
 }
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        margin: 0 auto 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p,
+    .about .text p,
+    .about ul {
+        font-size: 16px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    #socials div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
